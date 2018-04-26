@@ -8535,7 +8535,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="U1" library="LTM4607" deviceset="LTM4607EVPBF" device=""/>
 <part name="L1" library="LTM4607" deviceset="74439370047" device="" value="4.7u"/>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1210" package3d_urn="urn:adsk.eagle:package:23554/2" value="7m"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="15m"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
@@ -8549,10 +8549,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="PAD6" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="3,17/1,3" device="" package3d_urn="urn:adsk.eagle:package:30833/1"/>
-<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="150"/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="150"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k"/>
-<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="2.7k"/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k"/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="2.7k"/>
 <part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="5n"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100k"/>
 <part name="D1" library="LTM4607" deviceset="BZX84C4V7LT1G" device="" value="4.7V"/>
@@ -8577,9 +8577,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="PAD2" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="3,17/1,3" device="" package3d_urn="urn:adsk.eagle:package:30833/1"/>
 <part name="PAD7" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="3,17/1,3" device="" package3d_urn="urn:adsk.eagle:package:30833/1"/>
 <part name="PAD8" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="3,17/1,3" device="" package3d_urn="urn:adsk.eagle:package:30833/1"/>
-<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="6.98k"/>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="6.98k"/>
 <part name="JP2" library="pinhead-2" deviceset="PINHD-1X02" device="_2.54-SMD"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="15m"/>
 </parts>
 <sheets>
 <sheet>
@@ -8593,7 +8594,7 @@ PCR1V221MCL1GS</text>
 <text x="177.8" y="78.74" size="1.778" layer="97">Two resistors can be used to
 set output voltage precisely.
 Selected values are for 12V output.</text>
-<text x="177.8" y="73.66" size="1.778" layer="97">VOUT=0.8*(100K+R6+R7)/(R6+R7)</text>
+<text x="177.8" y="73.66" size="1.778" layer="97">VOUT=0.8*(100K+R7+R8)/(R7+R8)</text>
 <text x="25.4" y="154.94" size="1.778" layer="97">V_UVLO=1.6*(R1+R3)/R3.
 R3 design value set higher 
 than calculation to make
@@ -8601,13 +8602,13 @@ than calculation to make
 LTSpice simulation.</text>
 <text x="38.1" y="139.7" size="1.778" layer="97" rot="R180">Short JP1 to
 turn on converter.</text>
-<text x="58.42" y="88.9" size="1.778" layer="97" rot="R180">R5-R8 divider sets switching
+<text x="58.42" y="88.9" size="1.778" layer="97" rot="R180">R5-R9 divider sets switching
 frequency to 400kHz.</text>
 <text x="43.18" y="48.26" size="1.778" layer="97">PGOOD is an open drain pin that
 is pulled to ground when output
 is not within 10% of regulation point.
 Rises to INTVCC(6V) otherwise.</text>
-<text x="177.8" y="68.58" size="1.778" layer="97" align="top-left">Examples (Rfb = R6+R7)
+<text x="177.8" y="68.58" size="1.778" layer="97" align="top-left">Examples (Rfb = R7+R8)
 3.3V: Rfb = 32.4k
 5V: Rfb = 19.1k
 6V: Rfb = 15.4k
@@ -8624,13 +8625,13 @@ Output current:
 <text x="30.48" y="40.64" size="1.778" layer="97">Optocouplers recommeded for interfacing with micro-controllers</text>
 <text x="147.32" y="142.24" size="1.778" layer="97">Inductor:
 74439370047</text>
-<text x="217.17" y="20.828" size="2.1844" layer="97">Rev: 1.0</text>
+<text x="217.17" y="20.828" size="2.1844" layer="97">Rev: 1.1</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="U1" gate="B" x="93.98" y="137.16"/>
 <instance part="L1" gate="L" x="157.48" y="132.08" rot="R90"/>
-<instance part="R4" gate="G$1" x="154.94" y="106.68"/>
+<instance part="R5" gate="G$1" x="154.94" y="106.68"/>
 <instance part="GND7" gate="1" x="147.32" y="86.36"/>
 <instance part="C8" gate="G$1" x="167.64" y="116.84"/>
 <instance part="C9" gate="G$1" x="175.26" y="116.84"/>
@@ -8644,10 +8645,10 @@ Output current:
 <instance part="C1" gate="G$1" x="177.8" y="144.78"/>
 <instance part="GND1" gate="1" x="177.8" y="132.08"/>
 <instance part="PAD6" gate="1" x="162.56" y="83.82" rot="R180"/>
-<instance part="R6" gate="G$1" x="195.58" y="91.44" rot="R180"/>
+<instance part="R7" gate="G$1" x="195.58" y="91.44" rot="R180"/>
 <instance part="GND8" gate="1" x="215.9" y="86.36"/>
-<instance part="R5" gate="G$1" x="58.42" y="96.52" rot="R180"/>
-<instance part="R8" gate="G$1" x="66.04" y="86.36" rot="R270"/>
+<instance part="R6" gate="G$1" x="58.42" y="96.52" rot="R180"/>
+<instance part="R9" gate="G$1" x="66.04" y="86.36" rot="R270"/>
 <instance part="C16" gate="G$1" x="63.5" y="106.68" rot="R90"/>
 <instance part="R2" gate="G$1" x="66.04" y="127"/>
 <instance part="D1" gate="G$1" x="43.18" y="116.84" rot="R90"/>
@@ -8672,9 +8673,10 @@ Output current:
 <instance part="PAD2" gate="1" x="241.3" y="142.24" rot="R180"/>
 <instance part="PAD7" gate="1" x="162.56" y="76.2" rot="R180"/>
 <instance part="PAD8" gate="1" x="162.56" y="68.58" rot="R180"/>
-<instance part="R7" gate="G$1" x="208.28" y="91.44" rot="R180"/>
+<instance part="R8" gate="G$1" x="208.28" y="91.44" rot="R180"/>
 <instance part="JP2" gate="A" x="33.02" y="50.8" rot="R270"/>
 <instance part="GND10" gate="1" x="25.4" y="53.34"/>
+<instance part="R4" gate="G$1" x="154.94" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -8712,7 +8714,7 @@ Output current:
 <wire x1="58.42" y1="132.08" x2="88.9" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="96.52" x2="43.18" y2="96.52" width="0.1524" layer="91"/>
 <label x="40.64" y="96.52" size="1.778" layer="95"/>
 </segment>
@@ -8778,9 +8780,9 @@ Output current:
 <label x="76.2" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="96.52" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="96.52" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
 <junction x="66.04" y="96.52"/>
@@ -8797,7 +8799,7 @@ Output current:
 <wire x1="147.32" y1="91.44" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="U1" gate="B" pin="SENSE-"/>
 <wire x1="142.24" y1="101.6" x2="147.32" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="147.32" y1="101.6" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="106.68" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
@@ -8820,6 +8822,10 @@ Output current:
 <wire x1="154.94" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
 <junction x="154.94" y="83.82"/>
 <junction x="154.94" y="76.2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="114.3" x2="162.56" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="114.3" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
+<junction x="162.56" y="106.68"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="2"/>
@@ -8887,7 +8893,7 @@ Output current:
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="213.36" y1="91.44" x2="215.9" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="91.44" x2="215.9" y2="88.9" width="0.1524" layer="91"/>
 </segment>
@@ -8903,7 +8909,7 @@ Output current:
 <wire x1="58.42" y1="106.68" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="66.04" y1="81.28" x2="66.04" y2="78.74" width="0.1524" layer="91"/>
 </segment>
@@ -8928,11 +8934,11 @@ Output current:
 <net name="VFB" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="VFB"/>
-<wire x1="142.24" y1="116.84" x2="147.32" y2="116.84" width="0.1524" layer="91"/>
-<label x="147.32" y="116.84" size="1.778" layer="95"/>
+<wire x1="142.24" y1="116.84" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
+<label x="144.78" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="190.5" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
 <label x="182.88" y="91.44" size="1.778" layer="95"/>
 </segment>
@@ -9033,12 +9039,16 @@ Output current:
 <segment>
 <pinref part="U1" gate="B" pin="SENSE+"/>
 <wire x1="142.24" y1="106.68" x2="147.32" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="U1" gate="B" pin="RSENSE"/>
 <wire x1="147.32" y1="106.68" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="111.76" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="106.68" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
 <junction x="147.32" y="106.68"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="114.3" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="114.3" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
+<junction x="147.32" y="111.76"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -9056,8 +9066,8 @@ Output current:
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="91.44" x2="203.2" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>

@@ -403,6 +403,79 @@
 <wire x1="4.15" y1="-4.15" x2="0" y2="-4.15" width="0.127" layer="21"/>
 <text x="1.905" y="1.905" size="1.6764" layer="21">+</text>
 </package>
+<package name="R2512" urn="urn:adsk.eagle:footprint:23055/1">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
+<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
+<wire x1="-3.973" y1="1.983" x2="3.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="1.983" x2="3.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="-1.983" x2="-3.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="-3.973" y1="-1.983" x2="-3.973" y2="1.983" width="0.0508" layer="39"/>
+<smd name="1" x="-2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
+<smd name="2" x="2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
+<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
+<rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
+<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
+</package>
+<package name="RES_6432">
+<smd name="1" x="-1.1278" y="0" dx="1.7556" dy="6.5" layer="1"/>
+<smd name="2" x="1.1278" y="0" dx="1.7556" dy="6.5" layer="1"/>
+<wire x1="-2.7686" y1="0" x2="-2.921" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-2.921" y1="0" x2="-2.7686" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-0.254" y1="-3.2512" x2="-0.254" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="3.2512" x2="-1.651" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="-1.651" y1="-3.2512" x2="-0.254" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="0.254" y1="3.2512" x2="0.254" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="0.254" y1="-3.2512" x2="1.651" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="1.651" y1="3.2512" x2="0.254" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-3.2512" x2="0.254" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="1.651" y1="-3.2512" x2="1.651" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="0.254" y1="3.2512" x2="-0.254" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="-1.651" y1="3.2512" x2="-1.651" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="-0.9144" y1="0" x2="-1.0668" y2="0" width="0" layer="51" curve="-180"/>
+<wire x1="-1.0668" y1="0" x2="-0.9144" y2="0" width="0" layer="51" curve="-180"/>
+<text x="2.54" y="2.5146" size="1.27" layer="25" ratio="6" rot="SR270">&gt;Name</text>
+</package>
+<package name="RES_6432-M">
+<smd name="1" x="-1.2294" y="0" dx="1.9588" dy="6.6016" layer="1"/>
+<smd name="2" x="1.2294" y="0" dx="1.9588" dy="6.6016" layer="1"/>
+<wire x1="-2.9718" y1="0" x2="-3.1242" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-3.1242" y1="0" x2="-2.9718" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-0.254" y1="-3.2512" x2="-0.254" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="3.2512" x2="-1.651" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="-1.651" y1="-3.2512" x2="-0.254" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="0.254" y1="3.2512" x2="0.254" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="0.254" y1="-3.2512" x2="1.651" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="1.651" y1="3.2512" x2="0.254" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-3.2512" x2="0.254" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="1.651" y1="-3.2512" x2="1.651" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="0.254" y1="3.2512" x2="-0.254" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="-1.651" y1="3.2512" x2="-1.651" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="-1.016" y1="0" x2="-1.1684" y2="0" width="0" layer="51" curve="-180"/>
+<wire x1="-1.1684" y1="0" x2="-1.016" y2="0" width="0" layer="51" curve="-180"/>
+<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+<package name="RES_6432-L">
+<smd name="1" x="-1.0262" y="0" dx="1.5524" dy="6.5" layer="1"/>
+<smd name="2" x="1.0262" y="0" dx="1.5524" dy="6.5" layer="1"/>
+<wire x1="-2.5654" y1="0" x2="-2.7178" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-2.7178" y1="0" x2="-2.5654" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-0.254" y1="-3.2512" x2="-0.254" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="3.2512" x2="-1.651" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="-1.651" y1="-3.2512" x2="-0.254" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="0.254" y1="3.2512" x2="0.254" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="0.254" y1="-3.2512" x2="1.651" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="1.651" y1="3.2512" x2="0.254" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-3.2512" x2="0.254" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="1.651" y1="-3.2512" x2="1.651" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="0.254" y1="3.2512" x2="-0.254" y2="3.2512" width="0.1524" layer="51"/>
+<wire x1="-1.651" y1="3.2512" x2="-1.651" y2="-3.2512" width="0.1524" layer="51"/>
+<wire x1="-0.8128" y1="0" x2="-0.9652" y2="0" width="0" layer="51" curve="-180"/>
+<wire x1="-0.9652" y1="0" x2="-0.8128" y2="0" width="0" layer="51" curve="-180"/>
+<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SMD2,54-5,08" urn="urn:adsk.eagle:package:30841/1" type="box">
@@ -671,6 +744,47 @@
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
+<symbol name="RES">
+<pin name="11" x="0" y="0" visible="pin" length="short" direction="pas" swaplevel="1"/>
+<pin name="22" x="12.7" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="-1.27" width="0.2032" layer="94"/>
+<wire x1="4.445" y1="-1.27" x2="5.715" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="5.715" y1="1.27" x2="6.985" y2="-1.27" width="0.2032" layer="94"/>
+<wire x1="6.985" y1="-1.27" x2="8.255" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="8.255" y1="1.27" x2="9.525" y2="-1.27" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.175" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="9.525" y1="-1.27" x2="10.16" y2="0" width="0.2032" layer="94"/>
+<text x="-2.6162" y="-5.5372" size="3.4798" layer="96" ratio="10" rot="SR0">&gt;Value</text>
+<text x="-2.1844" y="2.0828" size="3.4798" layer="95" ratio="10" rot="SR0">&gt;Name</text>
+</symbol>
+<symbol name="RESV">
+<pin name="1" x="0" y="12.7" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="3.175" width="0.2032" layer="94"/>
+<wire x1="-1.27" y1="3.175" x2="1.27" y2="4.445" width="0.2032" layer="94"/>
+<wire x1="1.27" y1="4.445" x2="-1.27" y2="5.715" width="0.2032" layer="94"/>
+<wire x1="-1.27" y1="5.715" x2="1.27" y2="6.985" width="0.2032" layer="94"/>
+<wire x1="-1.27" y1="8.255" x2="1.27" y2="9.525" width="0.2032" layer="94"/>
+<wire x1="1.27" y1="9.525" x2="0" y2="10.16" width="0.2032" layer="94"/>
+<wire x1="1.27" y1="6.985" x2="-1.27" y2="8.255" width="0.2032" layer="94"/>
+<text x="1.905" y="3.3528" size="3.4798" layer="96" ratio="10" rot="SR0">&gt;Value</text>
+<text x="1.905" y="6.5024" size="3.4798" layer="95" ratio="10" rot="SR0">&gt;Name</text>
+</symbol>
+<symbol name="R-US">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LTM4607EVPBF" prefix="U" uservalue="yes">
@@ -848,6 +962,49 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KRL6432E-M-R007-F-T1" prefix="R" uservalue="yes">
+<gates>
+<gate name="A" symbol="R-US" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="RES_6432">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER_PART_NUMBER" value="KRL6432EMR007FT1" constant="no"/>
+<attribute name="VENDOR" value="Susumu" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="RES_6432-M" package="RES_6432-M">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER_PART_NUMBER" value="KRL6432EMR007FT1" constant="no"/>
+<attribute name="VENDOR" value="Susumu" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="RES_6432-L" package="RES_6432-L">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER_PART_NUMBER" value="KRL6432EMR007FT1" constant="no"/>
+<attribute name="VENDOR" value="Susumu" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
