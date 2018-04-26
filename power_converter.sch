@@ -70,6 +70,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -336,11 +337,42 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="8.0645" y1="-7.62" x2="-8.0645" y2="-7.62" width="0.127" layer="21"/>
 <wire x1="-8.0645" y1="-7.62" x2="-8.0645" y2="7.62" width="0.127" layer="21"/>
 </package>
-<package name="SMD5,08-10,16">
-<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
-<smd name="1" x="0" y="0" dx="5.08" dy="10.16" layer="1"/>
-<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
-<text x="-3.151" y="-2.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<package name="SOT23" urn="urn:adsk.eagle:footprint:29840/1">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="PCR1H181MCL1GS">
+<smd name="POS" x="0" y="4" dx="4" dy="2" layer="1" rot="R90"/>
+<smd name="NEG" x="0" y="-4" dx="4" dy="2" layer="1" rot="R90"/>
+<wire x1="5.15" y1="-5.15" x2="-5.15" y2="-5.15" width="0.254" layer="21"/>
+<wire x1="-5.15" y1="-5.15" x2="-5.15" y2="5.15" width="0.254" layer="21"/>
+<wire x1="-5.15" y1="5.15" x2="5.15" y2="5.15" width="0.254" layer="21"/>
+<wire x1="5.15" y1="5.15" x2="5.15" y2="-5.15" width="0.254" layer="21"/>
+<text x="1.905" y="2.54" size="1.778" layer="21">+</text>
+</package>
+<package name="PCR1V221MCL1GS">
+<smd name="POS" x="0" y="3.25" dx="3.5" dy="2" layer="1" rot="R90"/>
+<smd name="NEG" x="0" y="-3.25" dx="3.5" dy="2" layer="1" rot="R90"/>
+<wire x1="4.15" y1="4.15" x2="0" y2="4.15" width="0.127" layer="21"/>
+<wire x1="4.15" y1="4.15" x2="4.15" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.15" y1="-4.15" x2="0" y2="-4.15" width="0.127" layer="21"/>
+<wire x1="-4.15" y1="-4.15" x2="-4.15" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.15" y1="4.15" x2="-4.15" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.15" y1="4.15" x2="0" y2="4.15" width="0.127" layer="21"/>
+<wire x1="4.15" y1="-4.15" x2="4.15" y2="0" width="0.127" layer="21"/>
+<wire x1="4.15" y1="-4.15" x2="0" y2="-4.15" width="0.127" layer="21"/>
+<text x="1.905" y="1.905" size="1.6764" layer="21">+</text>
 </package>
 </packages>
 <symbols>
@@ -386,12 +418,29 @@ DIN A4, landscape with location and doc. field</description>
 <pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 </symbol>
-<symbol name="PAD">
-<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
-<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<symbol name="D-ZENER">
+<wire x1="-1.27" y1="-1.905" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.397" y1="1.905" x2="1.397" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.397" y1="-1.905" x2="2.032" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.397" y1="1.905" x2="0.762" y2="1.905" width="0.254" layer="94"/>
+<text x="-2.9464" y="2.6416" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.4704" y="-4.4958" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="CPOL-US">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -448,15 +497,47 @@ DIN A4, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SMD10" prefix="PAD" uservalue="yes">
-<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
+<deviceset name="BZX84C4V7LT1G" prefix="D" uservalue="yes">
 <gates>
-<gate name="1" symbol="PAD" x="0" y="0"/>
+<gate name="G$1" symbol="D-ZENER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SMD5,08-10,16">
+<device name="" package="SOT23">
 <connects>
-<connect gate="1" pin="P" pad="1"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PCR1H181MCL1GS" prefix="C" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="CPOL-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PCR1H181MCL1GS">
+<connects>
+<connect gate="G$1" pin="+" pad="POS"/>
+<connect gate="G$1" pin="-" pad="NEG"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PCR1V221MCL1GS" prefix="C" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="CPOL-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PCR1V221MCL1GS">
+<connects>
+<connect gate="G$1" pin="+" pad="POS"/>
+<connect gate="G$1" pin="-" pad="NEG"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8144,2613 +8225,297 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Kondensatoren (rev17a)">
-<description>&lt;BR&gt;Wurth Elektronik - Electrolytic Capacitors,Ceramic Capacitors &amp; Film Capacitors&lt;br&gt;&lt;Hr&gt;
-
-&lt;BR&gt;
-&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
-&lt;TR&gt;   
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
-      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      ---------------------------&lt;BR&gt;
-&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
-  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
-&lt;BR&gt;
-      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      ---------O---&lt;BR&gt;
-      ----O--------&lt;BR&gt;
-      ---------O---&lt;BR&gt;
-      ----O--------&lt;BR&gt;
-      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-   
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
-      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-
-  &lt;TR&gt;
-    &lt;TD COLSPAN=7&gt;&amp;nbsp;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  
-&lt;/TABLE&gt;
-&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
-
-&lt;HR&gt;&lt;BR&gt;
-&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
-EMC &amp; Inductive Solutions&lt;br&gt;
-
-Max-Eyth-Str.1&lt;br&gt;
-D-74638 Waldenburg&lt;br&gt;
-&lt;br&gt;
-Tel: +49 (0)7942-945-0&lt;br&gt;
-Fax:+49 (0)7942-945-5000&lt;br&gt;
-&lt;br&gt;
-&lt;a href="http://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/eagle_4.php"&gt;www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
-&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
-&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
-Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is error-free or &lt;br&gt;
-that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
-Please contact us for more information.&lt;br&gt;&lt;BR&gt;&lt;br&gt;
-
-Eagle Version 6, Library Revision 2017a, 2017-05-18&lt;br&gt;
-&lt;HR&gt;
-Copyright: Würth Elektronik</description>
+<library name="pinhead-2">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de, Modified by Cougar@CasaDelGato.Com&lt;/author&gt;</description>
 <packages>
-<package name="2.6X1.6X1(BXCXA)">
-<smd name="2" x="-1.8" y="0" dx="2.6" dy="1.6" layer="1"/>
-<smd name="1" x="1.8" y="0" dx="2.6" dy="1.6" layer="1"/>
-<wire x1="-2.15" y1="2.15" x2="1.35" y2="2.15" width="0.127" layer="21"/>
-<wire x1="-2.15" y1="-2.15" x2="-2.15" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="-2.15" y1="-2.15" x2="1.35" y2="-2.15" width="0.127" layer="21"/>
-<wire x1="-2.15" y1="2.15" x2="-2.15" y2="1.1" width="0.127" layer="21"/>
-<wire x1="1.35" y1="2.15" x2="2.15" y2="1.35" width="0.127" layer="21"/>
-<wire x1="1.35" y1="-2.15" x2="2.15" y2="-1.35" width="0.127" layer="21"/>
-<wire x1="-3.35" y1="2.4" x2="3.35" y2="2.4" width="0.127" layer="39"/>
-<wire x1="-3.35" y1="-2.4" x2="3.35" y2="-2.4" width="0.127" layer="39"/>
-<wire x1="-3.35" y1="2.4" x2="-3.35" y2="-2.4" width="0.127" layer="39"/>
-<wire x1="3.35" y1="2.4" x2="3.35" y2="-2.4" width="0.127" layer="39"/>
-<text x="-2.5" y="3.2" size="1.016" layer="25">&gt;NAME</text>
-<text x="-2.7" y="-4" size="1.016" layer="27">&gt;VALUE</text>
-<wire x1="2.15" y1="1.35" x2="2.15" y2="1" width="0.127" layer="21"/>
-<wire x1="2.15" y1="-1.35" x2="2.15" y2="-1" width="0.127" layer="21"/>
-<text x="2.5" y="-2" size="1.016" layer="21">+</text>
+<package name="1X02SMD">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 2.54 SMD</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<smd name="1" x="-1.27" y="1.27" dx="3.302" dy="1.016" layer="1" rot="R270"/>
+<smd name="2" x="1.27" y="-1.27" dx="3.302" dy="1.016" layer="1" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 </package>
-<package name="3X1.6X1.4(BXCXA)">
-<smd name="2" x="-2.2" y="0" dx="3" dy="1.6" layer="1"/>
-<smd name="1" x="2.2" y="0" dx="3" dy="1.6" layer="1"/>
-<wire x1="-2.65" y1="2.65" x2="1.65" y2="2.65" width="0.127" layer="21"/>
-<wire x1="-2.65" y1="-2.65" x2="-2.65" y2="-1" width="0.127" layer="21"/>
-<wire x1="-2.65" y1="-2.65" x2="1.65" y2="-2.65" width="0.127" layer="21"/>
-<wire x1="-2.65" y1="2.65" x2="-2.65" y2="1" width="0.127" layer="21"/>
-<wire x1="1.65" y1="2.65" x2="2.65" y2="1.65" width="0.127" layer="21"/>
-<wire x1="1.65" y1="-2.65" x2="2.65" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="-3.95" y1="2.9" x2="3.95" y2="2.9" width="0.127" layer="39"/>
-<wire x1="-3.95" y1="-2.9" x2="3.95" y2="-2.9" width="0.127" layer="39"/>
-<wire x1="-3.95" y1="2.9" x2="-3.95" y2="-2.9" width="0.127" layer="39"/>
-<wire x1="3.95" y1="2.9" x2="3.95" y2="-2.9" width="0.127" layer="39"/>
-<text x="-3" y="3.7" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.4" y="-4.8" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="2.65" y1="1.65" x2="2.65" y2="1.1" width="0.127" layer="21"/>
-<wire x1="2.65" y1="-1.65" x2="2.65" y2="-1" width="0.127" layer="21"/>
-<text x="2.9" y="-2.2" size="1.27" layer="21">+</text>
+<package name="1X02">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 2.54</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 </package>
-<package name="3.5X1.6X2.1(BXCXA)">
-<smd name="2" x="-2.8" y="0" dx="3.5" dy="1.6" layer="1"/>
-<smd name="1" x="2.8" y="0" dx="3.5" dy="1.6" layer="1"/>
-<wire x1="-3.3" y1="3.3" x2="1.75" y2="3.3" width="0.127" layer="21"/>
-<wire x1="-3.3" y1="-3.3" x2="-3.3" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="-3.3" y1="-3.3" x2="1.75" y2="-3.3" width="0.127" layer="21"/>
-<wire x1="-3.3" y1="3.3" x2="-3.3" y2="1.1" width="0.127" layer="21"/>
-<wire x1="1.75" y1="3.3" x2="3.3" y2="1.75" width="0.127" layer="21"/>
-<wire x1="1.75" y1="-3.3" x2="3.3" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="-4.8" y1="3.55" x2="4.8" y2="3.55" width="0.127" layer="39"/>
-<wire x1="-4.8" y1="-3.55" x2="4.8" y2="-3.55" width="0.127" layer="39"/>
-<wire x1="-4.8" y1="3.55" x2="-4.8" y2="-3.55" width="0.127" layer="39"/>
-<wire x1="4.8" y1="3.55" x2="4.8" y2="-3.55" width="0.127" layer="39"/>
-<text x="-3.2" y="4.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.1" y="-5.2" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="3.3" y1="1.75" x2="3.3" y2="1.1" width="0.127" layer="21"/>
-<wire x1="3.3" y1="-1.75" x2="3.3" y2="-1.1" width="0.127" layer="21"/>
-<text x="3.7" y="-2.4" size="1.27" layer="21">+</text>
+<package name="1X02-S">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 2.54</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="square"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="octagon"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 </package>
-<package name="4.2X1.9X2.8(BXCXA)">
-<smd name="2" x="-3.5" y="0" dx="4.2" dy="1.9" layer="1"/>
-<smd name="1" x="3.5" y="0" dx="4.2" dy="1.9" layer="1"/>
-<wire x1="-4.15" y1="4.15" x2="2.35" y2="4.15" width="0.127" layer="21"/>
-<wire x1="-4.15" y1="-4.15" x2="-4.15" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="-4.15" y1="-4.15" x2="2.35" y2="-4.15" width="0.127" layer="21"/>
-<wire x1="-4.15" y1="4.15" x2="-4.15" y2="1.25" width="0.127" layer="21"/>
-<wire x1="2.35" y1="4.15" x2="4.15" y2="2.35" width="0.127" layer="21"/>
-<wire x1="2.35" y1="-4.15" x2="4.15" y2="-2.35" width="0.127" layer="21"/>
-<wire x1="-5.85" y1="4.4" x2="5.85" y2="4.4" width="0.127" layer="39"/>
-<wire x1="-5.85" y1="-4.4" x2="5.85" y2="-4.4" width="0.127" layer="39"/>
-<wire x1="-5.85" y1="4.4" x2="-5.85" y2="-4.4" width="0.127" layer="39"/>
-<wire x1="5.85" y1="4.4" x2="5.85" y2="-4.4" width="0.127" layer="39"/>
-<text x="-3.13" y="5.13" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.4" y="-6.33" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="4.15" y1="2.35" x2="4.15" y2="1.35" width="0.127" layer="21"/>
-<wire x1="4.15" y1="-2.35" x2="4.15" y2="-1.15" width="0.127" layer="21"/>
-<text x="4.7" y="-3.3" size="1.27" layer="21">+</text>
+<package name="1X02M">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 2</description>
+<wire x1="2.25" y1="1.25" x2="2.25" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="2.25" y1="-1.25" x2="-2.25" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="-2.25" y1="-1.25" x2="-2.25" y2="1.25" width="0.2032" layer="21"/>
+<wire x1="-2.25" y1="1.25" x2="2.25" y2="1.25" width="0.2032" layer="21"/>
+<pad name="1" x="-1" y="0" drill="0.9144" shape="square"/>
+<pad name="2" x="1" y="0" drill="0.9144"/>
+<text x="-3" y="-1" size="1.016" layer="25" ratio="14" rot="R90">&gt;NAME</text>
+<text x="4" y="-1" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="0.75" y1="-0.25" x2="1.25" y2="0.25" layer="51"/>
+<rectangle x1="-1.25" y1="-0.25" x2="-0.75" y2="0.25" layer="51"/>
 </package>
-<package name="4.4X1.9X4.3(BXCXA)">
-<smd name="2" x="-4.35" y="0" dx="4.4" dy="1.9" layer="1"/>
-<smd name="1" x="4.35" y="0" dx="4.4" dy="1.9" layer="1"/>
-<wire x1="-5.15" y1="5.15" x2="3.15" y2="5.15" width="0.127" layer="21"/>
-<wire x1="-5.15" y1="-5.15" x2="-5.15" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="-5.15" y1="-5.15" x2="3.15" y2="-5.15" width="0.127" layer="21"/>
-<wire x1="-5.15" y1="5.15" x2="-5.15" y2="1.25" width="0.127" layer="21"/>
-<wire x1="3.15" y1="5.15" x2="5.15" y2="3.15" width="0.127" layer="21"/>
-<wire x1="3.15" y1="-5.15" x2="5.15" y2="-3.15" width="0.127" layer="21"/>
-<wire x1="-6.8" y1="5.4" x2="6.8" y2="5.4" width="0.127" layer="39"/>
-<wire x1="-6.8" y1="-5.4" x2="6.8" y2="-5.4" width="0.127" layer="39"/>
-<wire x1="-6.8" y1="5.4" x2="-6.8" y2="-5.4" width="0.127" layer="39"/>
-<wire x1="6.8" y1="5.4" x2="6.8" y2="-5.4" width="0.127" layer="39"/>
-<text x="-4.4" y="6.4" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.4" y="-7.6" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="5.15" y1="3.15" x2="5.15" y2="1.25" width="0.127" layer="21"/>
-<wire x1="5.15" y1="-3.15" x2="5.15" y2="-1.35" width="0.127" layer="21"/>
-<text x="5.6" y="-2.6" size="1.27" layer="21">+</text>
+<package name="1X02/90">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 2.54 90°</description>
+<wire x1="-3.81" y1="-1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="6.985" x2="-2.54" y2="1.27" width="0.762" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="6.985" x2="0" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-2.54" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-4.445" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="3.175" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.921" y1="0.635" x2="-2.159" y2="1.143" layer="21"/>
+<rectangle x1="-0.381" y1="0.635" x2="0.381" y2="1.143" layer="21"/>
+<rectangle x1="-2.921" y1="-2.921" x2="-2.159" y2="-1.905" layer="21"/>
+<rectangle x1="-0.381" y1="-2.921" x2="0.381" y2="-1.905" layer="21"/>
 </package>
-<package name="5.8X2.5X4.3(BXCXA)">
-<smd name="2" x="-5.05" y="0" dx="5.8" dy="2.5" layer="1"/>
-<smd name="1" x="5.05" y="0" dx="5.8" dy="2.5" layer="1"/>
-<wire x1="-6.75" y1="6.75" x2="4.25" y2="6.75" width="0.127" layer="21"/>
-<wire x1="-6.75" y1="-6.75" x2="-6.75" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="-6.75" y1="-6.75" x2="4.25" y2="-6.75" width="0.127" layer="21"/>
-<wire x1="-6.75" y1="6.75" x2="-6.75" y2="1.65" width="0.127" layer="21"/>
-<wire x1="4.25" y1="6.75" x2="6.75" y2="4.25" width="0.127" layer="21"/>
-<wire x1="4.25" y1="-6.75" x2="6.75" y2="-4.25" width="0.127" layer="21"/>
-<wire x1="-8.2" y1="7" x2="8.2" y2="7" width="0.127" layer="39"/>
-<wire x1="-8.2" y1="-7" x2="8.2" y2="-7" width="0.127" layer="39"/>
-<wire x1="-8.2" y1="7" x2="-8.2" y2="-7" width="0.127" layer="39"/>
-<wire x1="8.2" y1="7" x2="8.2" y2="-7" width="0.127" layer="39"/>
-<text x="-4.4" y="8.4" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.4" y="-9.6" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="6.75" y1="4.25" x2="6.75" y2="1.55" width="0.127" layer="21"/>
-<wire x1="6.75" y1="-4.25" x2="6.75" y2="-1.75" width="0.127" layer="21"/>
-<text x="7.3" y="-4.1" size="1.27" layer="21">+</text>
+<package name="1X02/90-S">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 2.54 90°</description>
+<wire x1="-3.81" y1="-1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="6.985" x2="-2.54" y2="1.27" width="0.762" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="6.985" x2="0" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-2.54" y="-3.81" drill="1.016" shape="square"/>
+<pad name="2" x="0" y="-3.81" drill="1.016" shape="octagon"/>
+<text x="-4.445" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="3.175" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.921" y1="0.635" x2="-2.159" y2="1.143" layer="21"/>
+<rectangle x1="-0.381" y1="0.635" x2="0.381" y2="1.143" layer="21"/>
+<rectangle x1="-2.921" y1="-2.921" x2="-2.159" y2="-1.905" layer="21"/>
+<rectangle x1="-0.381" y1="-2.921" x2="0.381" y2="-1.905" layer="21"/>
 </package>
-<package name="6.5X3.5X6(BXCXA)">
-<smd name="2" x="-6.25" y="0" dx="6.5" dy="3.5" layer="1"/>
-<smd name="1" x="6.25" y="0" dx="6.5" dy="3.5" layer="1"/>
-<wire x1="-8.55" y1="8.55" x2="6.05" y2="8.55" width="0.127" layer="21"/>
-<wire x1="-8.55" y1="-8.55" x2="-8.55" y2="-2.15" width="0.127" layer="21"/>
-<wire x1="-8.55" y1="-8.55" x2="6.05" y2="-8.55" width="0.127" layer="21"/>
-<wire x1="-8.55" y1="8.55" x2="-8.55" y2="2.15" width="0.127" layer="21"/>
-<wire x1="6.05" y1="8.55" x2="8.55" y2="6.05" width="0.127" layer="21"/>
-<wire x1="6.05" y1="-8.55" x2="8.55" y2="-6.05" width="0.127" layer="21"/>
-<wire x1="-9.75" y1="8.8" x2="9.7" y2="8.8" width="0.127" layer="39"/>
-<wire x1="-9.75" y1="-8.8" x2="9.75" y2="-8.8" width="0.127" layer="39"/>
-<wire x1="-9.75" y1="8.8" x2="-9.75" y2="-8.8" width="0.127" layer="39"/>
-<wire x1="9.7" y1="8.8" x2="9.75" y2="-8.8" width="0.127" layer="39"/>
-<text x="-4.4" y="10.4" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.4" y="-11.6" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="8.55" y1="6.05" x2="8.55" y2="2.05" width="0.127" layer="21"/>
-<wire x1="8.55" y1="-6.05" x2="8.55" y2="-2.15" width="0.127" layer="21"/>
-<text x="10.2" y="-0.6" size="1.27" layer="21">+</text>
+<package name="1X02SMD/90">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 2.54 90°</description>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="6.0325" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="-5.08" width="0.4064" layer="21"/>
+<wire x1="1.27" y1="6.0325" x2="1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="-5.08" width="0.4064" layer="21"/>
+<smd name="1" x="-1.27" y="-5.08" dx="1.778" dy="1.016" layer="1" rot="R90"/>
+<smd name="2" x="1.27" y="-5.08" dx="1.778" dy="1.016" layer="1" rot="R90"/>
+<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
+<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
+<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
 </package>
 </packages>
 <symbols>
-<symbol name="C_POLARIZED">
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<text x="3.175" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="3.175" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.905" width="0.127" layer="94"/>
-<wire x1="-2.54" y1="1.905" x2="2.54" y2="1.905" width="0.127" layer="94"/>
-<wire x1="2.54" y1="1.905" x2="2.54" y2="2.54" width="0.127" layer="94"/>
-<wire x1="-1.905" y1="3.175" x2="-1.905" y2="4.445" width="0.127" layer="94"/>
-<wire x1="-2.54" y1="3.81" x2="-1.27" y2="3.81" width="0.127" layer="94"/>
-<rectangle x1="-0.3175" y1="-2.2225" x2="0.3175" y2="2.8575" layer="94" rot="R90"/>
-<wire x1="-2.54" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="94"/>
+<symbol name="PINH1X02">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="WCAP-ASLL" prefix="C" uservalue="yes">
-<description>&lt;b&gt;WCAP-ASLL Aluminum Electrolytic Capacitors
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;Characteristics
-&lt;br&gt;&lt;/b&gt;Aluminum Electrolytic Capacitor
-&lt;br&gt;Recommended soldering: Reflow
-&lt;br&gt;Operating temperature: -55 °C to +105 °C
-&lt;br&gt;Low impedance product series
-&lt;br&gt;Load life: 2000 - 5000 h @ +105 °C
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;b&gt; Package name and Variant abbreviation:
-&lt;br&gt;&lt;/b&gt; Package:
-&lt;br&gt;Package: B X C X A = length of the solder pad X width of the solder pad X pitch of the solder pad.
-
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/eisos/WCAP-ASLL_pf2.jpg" title="Enlarge picture"&gt;
-&lt;img src="http://katalog.we-online.de/media/thumbs2/eisos/thb_WCAP-ASLL_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
-Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WCAP-ASLL?m"&gt;http://katalog.we-online.de/en/pbs/WCAP-ASLL?m
-&lt;/a&gt;&lt;p&gt;Updated by: Yingchun,Shan
-&lt;/a&gt;&lt;p&gt;Updated: 2017-03-16
-&lt;br&gt;2017 (C) Wurth Elektronik</description>
+<deviceset name="PINHD-1X02" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="C_POLARIZED" x="0" y="0"/>
+<gate name="A" symbol="PINH1X02" x="0" y="0"/>
 </gates>
 <devices>
-<device name="_865060140001" package="2.6X1.6X1(BXCXA)">
+<device name="_2.54" package="1X02">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865060140001/22uF" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="_865060142003" package="3X1.6X1.4(BXCXA)">
+<device name="_2.54-S" package="1X02-S">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865060142003/47uF" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="_865060143004" package="3.5X1.6X2.1(BXCXA)">
+<device name="_2.00" package="1X02M">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060143004/100uF" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="_865060153007" package="4.2X1.9X2.8(BXCXA)">
+<device name="_2.54-SMD" package="1X02SMD">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865060153007/330uF" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="_865060157011" package="4.4X1.9X4.3(BXCXA)">
+<device name="_2.54-90°" package="1X02/90">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865060157011/1500uF" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="_865060162012" package="5.8X2.5X4.3(BXCXA)">
+<device name="_2.54-90°-S" package="1X02/90-S">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865060162012/3300uF" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="_865060163013" package="6.5X3.5X6(BXCXA)">
+<device name="_2.54-SMD-90°" package="1X02SMD/90">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865060163013/6800uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060145006" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865060145006/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060140002" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865060140002/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060240001" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865060240001/22uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060340001" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865060340001/10uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060440001" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865060440001/10uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060540001" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865060540001/4,7uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060640001" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865060640001/1uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060640002" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865060640002/2,2uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060640003" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865060640003/3,3uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060242002" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865060242002/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060342002" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865060342002/22uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060442002" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865060442002/22uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060542002" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865060542002/10uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060642004" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865060642004/4,7uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060143005" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060143005/150uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060243003" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060243003/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060243004" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060243004/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060243005" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060243005/150uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060343003" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060343003/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060343004" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060343004/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060343005" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060343005/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060443003" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060443003/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060443004" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060443004/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060543003" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060543003/22uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060543004" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060543004/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060543005" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060543005/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060643005" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060643005/10uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060643006" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865060643006/22uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060245006" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865060245006/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060345006" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865060345006/150uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060345007" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865060345007/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060445005" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865060445005/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060645007" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865060645007/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060645008" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865060645008/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060153008" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865060153008/470uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060153009" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865060153009/680uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060153010" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865060153010/1000uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060253007" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865060253007/330uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060253008" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUBMER" value="865060253008/470uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060353008" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865060353008/330uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060353009" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865060353009/470uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060453006" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865060453006/150uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060453007" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865060453007/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060453008" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865060453008/330uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060553006" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865060553006/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060553007" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865060553007/150uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060653009" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865060653009/68uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060653010" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865060653010/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060257009" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865060257009/680uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060257010" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865060257010/1000uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060357010" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865060357010/680uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060457009" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865060457009/470uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060557008" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865060557008/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060657011" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865060657011/150uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060657012" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865060657012/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060262011" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865060262011/2200uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060362011" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865060362011/1500uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060462010" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865060462010/1000uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060562009" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865060562009/470uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060562010" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865060562010/680uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060263012" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865060263012/4700uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060363012" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMNBER" value="865060363012/330uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060463011" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865060463011/2200uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060563011" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865060563011/1000uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060563012" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865060563012/1500uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060663013" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865060663013/470uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060663014" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865060663014/680uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060663015" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865060663015/1000uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865060763010" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865060763010/470uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865061463005" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865061463005/15uF" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="WCAP-ASLI" prefix="C" uservalue="yes">
-<description>&lt;b&gt;WCAP-ASLI Aluminum Electrolytic Capacitors
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;Characteristics
-&lt;br&gt;&lt;/b&gt;Aluminum Electrolytic Capacitor
-&lt;br&gt;Recommended soldering: Reflow
-&lt;br&gt;Operating temperature: -55 °C to +105 °C
-&lt;br&gt;Low impedance product series
-&lt;br&gt;Load life:2000 h @ +105 °C
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;b&gt; Package name and Variant abbreviation:
-&lt;br&gt;&lt;/b&gt; Package:
-&lt;br&gt;Package: B X C X A = length of the solder pad X width of the solder pad X pitch of the solder pad.
-
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/eisos/WCAP-ASLI_pf2.jpg" title="Enlarge picture"&gt;
-&lt;img src="http://katalog.we-online.de/media/thumbs2/eisos/thb_WCAP-ASLI_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
-Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WCAP-ASLI"&gt;http://katalog.we-online.de/en/pbs/WCAP-ASLI
-&lt;/a&gt;&lt;p&gt;Updated by: Yingchun,Shan
-&lt;/a&gt;&lt;p&gt;Updated: 2017-03-16
-&lt;br&gt;2017 (C) Wurth Elektronik</description>
+</devicesets>
+</library>
+<library name="wirepad" urn="urn:adsk.eagle:library:412">
+<description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="3,17/1,3" urn="urn:adsk.eagle:footprint:30815/1" library_version="1">
+<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
+<wire x1="1.524" y1="-1.016" x2="1.524" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="-1.524" x2="1.016" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-1.524" x2="-1.524" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-1.524" x2="-1.524" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="1.016" x2="-1.524" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="1.524" x2="-1.016" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="1.524" x2="1.524" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="1.524" x2="1.524" y2="1.016" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="1.27" width="0.1524" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.3208" diameter="3.175" shape="octagon"/>
+<text x="-1.524" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="1.2" size="0.0254" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="3,17/1,3" urn="urn:adsk.eagle:package:30833/1" type="box" library_version="1">
+<description>THROUGH-HOLE PAD</description>
+<packageinstances>
+<packageinstance name="3,17/1,3"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="PAD" urn="urn:adsk.eagle:symbol:30808/1" library_version="1">
+<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="3,17/1,3" urn="urn:adsk.eagle:component:30852/1" prefix="PAD" uservalue="yes" library_version="1">
+<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="C_POLARIZED" x="0" y="0"/>
+<gate name="1" symbol="PAD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="_865080140001" package="2.6X1.6X1(BXCXA)">
+<device name="" package="3,17/1,3">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="1" pin="P" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30833/1"/>
+</package3dinstances>
 <technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080140001/22uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080142005" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080142005/56uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080143008" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080143008/150uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080153012" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080153012/470uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080157015" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865080157016/1200uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080162017" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865080162017/3300uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080163018" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865080163018/6800uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080145010" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865080145010/330uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080149011" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X6,5">
-<attribute name="WE-NUMBER" value="865080149011/330uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080864003" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X6,1">
-<attribute name="WE-NUMBER" value="865080864003/3,3uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080140002" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080140002/27uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080140003" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080140003/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080140004" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080140004/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080240001" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080240001/22uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080240003" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080240003/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080340001" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080340001/10uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080340002" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080340002/15uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080340003" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080340003/22uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080440001" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080440001/6,8uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080440002" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080540001/3,3uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080540002" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080540002/4,7uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080540003" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080540003/6,8uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080540004" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080540004/10uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080640001" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080640001/1uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080640002" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080640002/2,2uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080640003" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080640003/3,3uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080640004" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080640004/4,7uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080740002" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080740002/0,1uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080142006" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080142006/68uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080142007" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080142007/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080242002" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080242002/27uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080242004" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080242004/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080342004" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080342004/27uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080342006" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080342006/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080442003" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080442003/15uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080442004" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080442004/22uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080442006" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080442006/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080542005" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080542005/15uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080542006" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5"/>
-</technologies>
-</device>
-<device name="_865080642005" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080642005/6,8uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080642006" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080642006/10uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080143009" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080143009/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080243005" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080243005/56uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080243006" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080243006/68uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080243007" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080243007/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080243008" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5"/>
-</technologies>
-</device>
-<device name="_865080343005" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080343005/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080343007" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080343007/56uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080343008" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080343008/68uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080343009" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080343009/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080443005" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080443005/27uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080443007" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080443007/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080443008" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080443008/56uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080443009" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080443009/68uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080543007" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080543007/27uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080543008" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080543008/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080543009" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080543009/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080643007" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080643007/15uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080643008" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080643008/22uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080245009" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865080245009/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080345010" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865080345010/150uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080345012" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865080345012/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080445010" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865080445010/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080545010" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865080545010/56uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080545011" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865080545011/68uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080545012" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865080545012/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080645009" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865080645009/27uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080645010" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865080645010/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080645012" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865080645012/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080153013" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080153013/680uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080153014" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080153014/1000uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080253011" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080253011/330uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080253012" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080253012/470uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080353014" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="W-NUMBER" value="865080353014/330uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080353015" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080353015/470uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080453012" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080453012/150uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080453013" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080453013/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080453014" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080453014/330uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080553013" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080553013/150uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080553014" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080553014/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080653014" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080653014/56uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080653015" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080653015/68uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080653016" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080653016/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080249010" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X6,5">
-<attribute name="WE-NUMBER" value="865080249010/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080349011" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X6,5">
-<attribute name="WE-NUMBER" value="865080349011/150uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080349013" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X6,5">
-<attribute name="WE-NUMBER" value="865080349013/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080449011" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X6,5">
-<attribute name="WE-NUMBER" value="865080449011/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080649011" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X6,5">
-<attribute name="WE-NUMBER" value="865080649011/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080649013" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X6,5">
-<attribute name="WE-NUMBER" value="865080649013/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080157016" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865080157016/1500uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080257013" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865080257013/680uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080257014" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865080257014/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080357016" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865080357016/680uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080457015" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865080457015/470uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080557015" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865080557015/330uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080657017" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865080657017/150uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080657018" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865080657018/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080262015" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865080262015/2200uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080362017" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865080362017/1500uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080462016" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865080462016/1000uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080562016" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865080562016/470uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080562017" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865080562017/680uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080662019" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865080662019/330uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080263016" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865080263016/4700uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080363018" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865080363018/3300uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080463017" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865080463017/2200uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080563018" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865080563018/1500uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080663020" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865080663020/1000uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080763016" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865080763016/470uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080863009" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865080863009/150uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865081763010" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865081763010/150uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865081763011" package="6.5X3.5X6(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_16X17">
-<attribute name="WE-NUMBER" value="865081763011/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080540001" package="2.6X1.6X1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_4X5,5">
-<attribute name="WE-NUMBER" value="865080540001/3,3uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080742008" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080742008/3,3uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080742009" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865080742009/4,7uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865081742002" package="3X1.6X1.4(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_5X5,5">
-<attribute name="WE-NUMBER" value="865081742002/2,2uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080753012" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080753012/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080753013" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080753013/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080853006" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865080853006/22uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865081753007" package="4.2X1.9X2.8(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_8X10,5">
-<attribute name="WE-NUMBER" value="865081753007/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080757014" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865080757014/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080857007" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865080857007/33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865081757008" package="4.4X1.9X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_10X10,5">
-<attribute name="WE-NUMBER" value="865081757008/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080762015" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865080762015/220uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080862008" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865080862008/47uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865081762009" package="5.8X2.5X4.3(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_12,5X14">
-<attribute name="WE-NUMBER" value="865081762009/100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080743010" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080743010/10uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080843002" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865080843002/2,2uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865081743003" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865081743003/3,3uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865081743004" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X5,5">
-<attribute name="WE-NUMBER" value="865081743004/4,7uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080745011" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865080745011/22uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080845004" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865080845004/4,7uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865080845005" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865080845005/10uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865081745005" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865081745005/10uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_865081745006" package="3.5X1.6X2.1(BXCXA)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_6,3X7,7">
-<attribute name="WE-NUMBER" value="865081745006/22uF" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -10769,50 +8534,147 @@ Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WCAP-ASLI"&gt;http:/
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="U1" library="LTM4607" deviceset="LTM4607EVPBF" device=""/>
-<part name="L1" library="LTM4607" deviceset="74439370047" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1210" package3d_urn="urn:adsk.eagle:package:23554/2"/>
+<part name="L1" library="LTM4607" deviceset="74439370047" device="" value="4.7u"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1210" package3d_urn="urn:adsk.eagle:package:23554/2" value="7m"/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
+<part name="PAD3" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="3,17/1,3" device="" package3d_urn="urn:adsk.eagle:package:30833/1"/>
+<part name="PAD5" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="3,17/1,3" device="" package3d_urn="urn:adsk.eagle:package:30833/1"/>
+<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
+<part name="PAD1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="3,17/1,3" device="" package3d_urn="urn:adsk.eagle:package:30833/1"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2"/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2"/>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2"/>
-<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C4" library="Kondensatoren (rev17a)" deviceset="WCAP-ASLL" device="_865060557008" technology="_10X10,5"/>
-<part name="C6" library="Kondensatoren (rev17a)" deviceset="WCAP-ASLI" device="_865080453012" technology="_8X10,5"/>
-<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2"/>
-<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2"/>
-<part name="PAD1" library="LTM4607" deviceset="SMD10" device=""/>
-<part name="PAD2" library="LTM4607" deviceset="SMD10" device=""/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2"/>
-<part name="PAD3" library="LTM4607" deviceset="SMD10" device=""/>
-<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2"/>
+<part name="PAD6" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="3,17/1,3" device="" package3d_urn="urn:adsk.eagle:package:30833/1"/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="150"/>
+<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k"/>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="2.7k"/>
+<part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="5n"/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100k"/>
+<part name="D1" library="LTM4607" deviceset="BZX84C4V7LT1G" device="" value="4.7V"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="PAD4" library="LTM4607" deviceset="SMD10" device=""/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="51k"/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="JP1" library="pinhead-2" deviceset="PINHD-1X02" device="_2.54-SMD"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="8.5k"/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C7" library="LTM4607" deviceset="PCR1H181MCL1GS" device="" value="180u"/>
+<part name="C14" library="LTM4607" deviceset="PCR1V221MCL1GS" device="" value="220u"/>
+<part name="C15" library="LTM4607" deviceset="PCR1V221MCL1GS" device="" value="220u"/>
+<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
+<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
+<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
+<part name="PAD4" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="3,17/1,3" device="" package3d_urn="urn:adsk.eagle:package:30833/1"/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10u"/>
+<part name="PAD2" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="3,17/1,3" device="" package3d_urn="urn:adsk.eagle:package:30833/1"/>
+<part name="PAD7" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="3,17/1,3" device="" package3d_urn="urn:adsk.eagle:package:30833/1"/>
+<part name="PAD8" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="3,17/1,3" device="" package3d_urn="urn:adsk.eagle:package:30833/1"/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="6.98k"/>
+<part name="JP2" library="pinhead-2" deviceset="PINHD-1X02" device="_2.54-SMD"/>
+<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="177.8" y="165.1" size="1.778" layer="97">Ceramic input/output caps:
+C3225X5R1H106K250AB</text>
+<text x="177.8" y="157.48" size="1.778" layer="97">Al polymer input caps:
+PCR1H181MCL1GS</text>
+<text x="177.8" y="101.6" size="1.778" layer="97">Al polymer output caps:
+PCR1V221MCL1GS</text>
+<text x="177.8" y="78.74" size="1.778" layer="97">Two resistors can be used to
+set output voltage precisely.
+Selected values are for 12V output.</text>
+<text x="177.8" y="73.66" size="1.778" layer="97">VOUT=0.8*(100K+R6+R7)/(R6+R7)</text>
+<text x="25.4" y="154.94" size="1.778" layer="97">V_UVLO=1.6*(R1+R3)/R3.
+R3 design value set higher 
+than calculation to make
+12V lock-out work in
+LTSpice simulation.</text>
+<text x="38.1" y="139.7" size="1.778" layer="97" rot="R180">Short JP1 to
+turn on converter.</text>
+<text x="58.42" y="88.9" size="1.778" layer="97" rot="R180">R5-R8 divider sets switching
+frequency to 400kHz.</text>
+<text x="43.18" y="48.26" size="1.778" layer="97">PGOOD is an open drain pin that
+is pulled to ground when output
+is not within 10% of regulation point.
+Rises to INTVCC(6V) otherwise.</text>
+<text x="177.8" y="68.58" size="1.778" layer="97" align="top-left">Examples (Rfb = R6+R7)
+3.3V: Rfb = 32.4k
+5V: Rfb = 19.1k
+6V: Rfb = 15.4k
+9V: Rfb = 9.76k
+12V: Rfb = 7.15k
+15V: Rfb = 5.62k
+24V: Rfb = 3.4k</text>
+<text x="218.44" y="106.68" size="1.778" layer="97" align="top-left">Ratings:
+Input voltage: 4.5V-36V
+Output voltage: 0.8V-24V
+Output current:
+     5A in Boost mode (Vin&lt;Vout)
+     10A in Buck mode (Vin&gt;Vout)</text>
+<text x="30.48" y="40.64" size="1.778" layer="97">Optocouplers recommeded for interfacing with micro-controllers</text>
+<text x="147.32" y="142.24" size="1.778" layer="97">Inductor:
+74439370047</text>
+<text x="217.17" y="20.828" size="2.1844" layer="97">Rev: 1.0</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="U1" gate="B" x="106.68" y="121.92"/>
-<instance part="L1" gate="L" x="170.18" y="116.84" rot="R90"/>
-<instance part="R1" gate="G$1" x="177.8" y="91.44"/>
-<instance part="GND1" gate="1" x="170.18" y="71.12"/>
-<instance part="C1" gate="G$1" x="190.5" y="101.6"/>
-<instance part="C2" gate="G$1" x="198.12" y="101.6"/>
-<instance part="C3" gate="G$1" x="205.74" y="101.6"/>
-<instance part="GND2" gate="1" x="198.12" y="88.9"/>
-<instance part="C4" gate="G$1" x="226.06" y="99.06"/>
-<instance part="C6" gate="G$1" x="215.9" y="127"/>
-<instance part="C5" gate="G$1" x="200.66" y="129.54"/>
-<instance part="C7" gate="G$1" x="208.28" y="129.54"/>
-<instance part="PAD1" gate="1" x="238.76" y="106.68" rot="R180"/>
-<instance part="PAD2" gate="1" x="228.6" y="76.2" rot="R180"/>
-<instance part="C8" gate="G$1" x="213.36" y="101.6"/>
-<instance part="PAD3" gate="1" x="233.68" y="134.62" rot="R180"/>
-<instance part="C9" gate="G$1" x="193.04" y="129.54"/>
-<instance part="GND3" gate="1" x="200.66" y="116.84"/>
-<instance part="PAD4" gate="1" x="228.6" y="68.58" rot="R180"/>
+<instance part="U1" gate="B" x="93.98" y="137.16"/>
+<instance part="L1" gate="L" x="157.48" y="132.08" rot="R90"/>
+<instance part="R4" gate="G$1" x="154.94" y="106.68"/>
+<instance part="GND7" gate="1" x="147.32" y="86.36"/>
+<instance part="C8" gate="G$1" x="167.64" y="116.84"/>
+<instance part="C9" gate="G$1" x="175.26" y="116.84"/>
+<instance part="GND5" gate="1" x="167.64" y="104.14"/>
+<instance part="C2" gate="G$1" x="185.42" y="144.78"/>
+<instance part="C3" gate="G$1" x="193.04" y="144.78"/>
+<instance part="PAD3" gate="1" x="241.3" y="121.92" rot="R180"/>
+<instance part="PAD5" gate="1" x="162.56" y="91.44" rot="R180"/>
+<instance part="C10" gate="G$1" x="182.88" y="116.84"/>
+<instance part="PAD1" gate="1" x="241.3" y="149.86" rot="R180"/>
+<instance part="C1" gate="G$1" x="177.8" y="144.78"/>
+<instance part="GND1" gate="1" x="177.8" y="132.08"/>
+<instance part="PAD6" gate="1" x="162.56" y="83.82" rot="R180"/>
+<instance part="R6" gate="G$1" x="195.58" y="91.44" rot="R180"/>
+<instance part="GND8" gate="1" x="215.9" y="86.36"/>
+<instance part="R5" gate="G$1" x="58.42" y="96.52" rot="R180"/>
+<instance part="R8" gate="G$1" x="66.04" y="86.36" rot="R270"/>
+<instance part="C16" gate="G$1" x="63.5" y="106.68" rot="R90"/>
+<instance part="R2" gate="G$1" x="66.04" y="127"/>
+<instance part="D1" gate="G$1" x="43.18" y="116.84" rot="R90"/>
+<instance part="GND3" gate="1" x="43.18" y="109.22"/>
+<instance part="R1" gate="G$1" x="43.18" y="139.7" rot="R90"/>
+<instance part="GND9" gate="1" x="66.04" y="76.2"/>
+<instance part="GND6" gate="1" x="86.36" y="86.36"/>
+<instance part="GND4" gate="1" x="55.88" y="106.68" rot="R270"/>
+<instance part="JP1" gate="A" x="33.02" y="127" rot="R180"/>
+<instance part="R3" gate="G$1" x="22.86" y="121.92" rot="R90"/>
+<instance part="GND2" gate="1" x="22.86" y="111.76"/>
+<instance part="C7" gate="G$1" x="226.06" y="144.78"/>
+<instance part="C14" gate="G$1" x="215.9" y="116.84"/>
+<instance part="C15" gate="G$1" x="226.06" y="116.84"/>
+<instance part="C11" gate="G$1" x="190.5" y="116.84"/>
+<instance part="C4" gate="G$1" x="200.66" y="144.78"/>
+<instance part="C12" gate="G$1" x="198.12" y="116.84"/>
+<instance part="C13" gate="G$1" x="205.74" y="116.84"/>
+<instance part="PAD4" gate="1" x="241.3" y="114.3" rot="R180"/>
+<instance part="C5" gate="G$1" x="208.28" y="144.78"/>
+<instance part="C6" gate="G$1" x="215.9" y="144.78"/>
+<instance part="PAD2" gate="1" x="241.3" y="142.24" rot="R180"/>
+<instance part="PAD7" gate="1" x="162.56" y="76.2" rot="R180"/>
+<instance part="PAD8" gate="1" x="162.56" y="68.58" rot="R180"/>
+<instance part="R7" gate="G$1" x="208.28" y="91.44" rot="R180"/>
+<instance part="JP2" gate="A" x="33.02" y="50.8" rot="R270"/>
+<instance part="GND10" gate="1" x="25.4" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -10821,225 +8683,382 @@ Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WCAP-ASLI"&gt;http:/
 <segment>
 <pinref part="U1" gate="B" pin="SW2"/>
 <pinref part="L1" gate="L" pin="1"/>
-<wire x1="154.94" y1="116.84" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="132.08" x2="149.86" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SW1" class="0">
 <segment>
 <pinref part="L1" gate="L" pin="2"/>
-<wire x1="177.8" y1="116.84" x2="180.34" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="116.84" x2="180.34" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="132.08" x2="167.64" y2="127" width="0.1524" layer="91"/>
 <pinref part="U1" gate="B" pin="SW1"/>
-<wire x1="180.34" y1="111.76" x2="154.94" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="127" x2="142.24" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EXTVCC" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="EXTVCC"/>
-<wire x1="101.6" y1="121.92" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
-<label x="88.9" y="121.92" size="1.778" layer="95"/>
+<wire x1="88.9" y1="137.16" x2="73.66" y2="137.16" width="0.1524" layer="91"/>
+<label x="76.2" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INTVCC" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="INTVCC"/>
-<wire x1="101.6" y1="116.84" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
-<label x="88.9" y="116.84" size="1.778" layer="95"/>
+<label x="76.2" y="132.08" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="127" x2="58.42" y2="127" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="127" x2="58.42" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="132.08" x2="88.9" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="96.52" x2="43.18" y2="96.52" width="0.1524" layer="91"/>
+<label x="40.64" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PGOOD" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="PGOOD"/>
-<wire x1="101.6" y1="111.76" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
-<label x="88.9" y="111.76" size="1.778" layer="95"/>
+<wire x1="88.9" y1="127" x2="71.12" y2="127" width="0.1524" layer="91"/>
+<label x="76.2" y="127" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="1"/>
+<wire x1="35.56" y1="53.34" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
+<label x="35.56" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="RUN" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="RUN"/>
-<wire x1="101.6" y1="106.68" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
-<label x="88.9" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="STBMD" class="0">
-<segment>
+<label x="76.2" y="121.92" size="1.778" layer="95"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="43.18" y1="121.92" x2="43.18" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="121.92" x2="43.18" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="121.92" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="U1" gate="B" pin="STBMD"/>
-<wire x1="101.6" y1="101.6" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
-<label x="88.9" y="101.6" size="1.778" layer="95"/>
+<wire x1="88.9" y1="116.84" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
+<label x="76.2" y="116.84" size="1.778" layer="95"/>
+<junction x="68.58" y="121.92"/>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="35.56" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="124.46" x2="43.18" y2="121.92" width="0.1524" layer="91"/>
+<junction x="43.18" y="121.92"/>
 </segment>
 </net>
 <net name="COMP" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="COMP"/>
-<wire x1="101.6" y1="96.52" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
-<label x="88.9" y="96.52" size="1.778" layer="95"/>
+<wire x1="88.9" y1="111.76" x2="73.66" y2="111.76" width="0.1524" layer="91"/>
+<label x="76.2" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SS" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="SS"/>
-<wire x1="101.6" y1="91.44" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
-<label x="88.9" y="91.44" size="1.778" layer="95"/>
+<wire x1="88.9" y1="106.68" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
+<label x="76.2" y="106.68" size="1.778" layer="95"/>
+<pinref part="C16" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PLLIN" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="PLLIN"/>
-<wire x1="101.6" y1="86.36" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
-<label x="88.9" y="86.36" size="1.778" layer="95"/>
+<wire x1="88.9" y1="101.6" x2="73.66" y2="101.6" width="0.1524" layer="91"/>
+<label x="76.2" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PLLFLTR" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="PLLFLTR"/>
-<wire x1="101.6" y1="81.28" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
-<label x="88.9" y="81.28" size="1.778" layer="95"/>
+<wire x1="88.9" y1="96.52" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
+<label x="76.2" y="96.52" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="FCB" class="0">
 <segment>
-<pinref part="U1" gate="B" pin="FCB"/>
-<wire x1="101.6" y1="76.2" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
-<label x="88.9" y="76.2" size="1.778" layer="95"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="96.52" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="96.52" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
+<junction x="66.04" y="96.52"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="SGND"/>
-<wire x1="154.94" y1="76.2" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="170.18" y1="73.66" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="147.32" y1="88.9" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="U1" gate="B" pin="PGND"/>
-<wire x1="154.94" y1="81.28" x2="170.18" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="76.2" x2="170.18" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="96.52" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="91.44" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="U1" gate="B" pin="SENSE-"/>
-<wire x1="154.94" y1="86.36" x2="170.18" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="86.36" x2="185.42" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="91.44" x2="185.42" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="91.44" x2="185.42" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="81.28" x2="170.18" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="PAD2" gate="1" pin="P"/>
-<wire x1="170.18" y1="76.2" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
-<junction x="170.18" y="76.2"/>
-<junction x="170.18" y="81.28"/>
-<junction x="170.18" y="86.36"/>
-<pinref part="PAD4" gate="1" pin="P"/>
-<wire x1="220.98" y1="76.2" x2="226.06" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="68.58" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="68.58" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
-<junction x="220.98" y="76.2"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="190.5" y1="96.52" x2="190.5" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="93.98" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="93.98" x2="205.74" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="93.98" x2="205.74" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="96.52" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="198.12" y1="93.98" x2="198.12" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="93.98" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="93.98" x2="226.06" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="96.52" x2="226.06" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="96.52" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
-<junction x="198.12" y="93.98"/>
-<junction x="205.74" y="93.98"/>
-<junction x="213.36" y="93.98"/>
+<wire x1="142.24" y1="101.6" x2="147.32" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="101.6" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="106.68" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="96.52" x2="147.32" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="PAD5" gate="1" pin="P"/>
+<wire x1="147.32" y1="91.44" x2="154.94" y2="91.44" width="0.1524" layer="91"/>
+<junction x="147.32" y="91.44"/>
+<junction x="147.32" y="96.52"/>
+<junction x="147.32" y="101.6"/>
+<pinref part="PAD6" gate="1" pin="P"/>
+<wire x1="154.94" y1="91.44" x2="160.02" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="83.82" x2="154.94" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="83.82" x2="154.94" y2="91.44" width="0.1524" layer="91"/>
+<junction x="154.94" y="91.44"/>
+<wire x1="154.94" y1="83.82" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="PAD7" gate="1" pin="P"/>
+<wire x1="154.94" y1="76.2" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="76.2" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="PAD8" gate="1" pin="P"/>
+<wire x1="154.94" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
+<junction x="154.94" y="83.82"/>
+<junction x="154.94" y="76.2"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="124.46" x2="193.04" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="121.92" x2="200.66" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="121.92" x2="208.28" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="121.92" x2="215.9" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="121.92" x2="215.9" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="121.92" x2="208.28" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="109.22" x2="175.26" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="109.22" x2="175.26" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="111.76" x2="167.64" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="167.64" y1="109.22" x2="167.64" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="109.22" x2="182.88" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="109.22" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="109.22" x2="198.12" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="109.22" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="109.22" x2="215.9" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="111.76" x2="215.9" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="111.76" x2="182.88" y2="109.22" width="0.1524" layer="91"/>
+<junction x="167.64" y="109.22"/>
+<junction x="175.26" y="109.22"/>
+<junction x="182.88" y="109.22"/>
+<pinref part="C14" gate="G$1" pin="-"/>
+<wire x1="215.9" y1="109.22" x2="226.06" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="-"/>
+<wire x1="226.06" y1="109.22" x2="226.06" y2="111.76" width="0.1524" layer="91"/>
+<junction x="215.9" y="109.22"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="190.5" y1="111.76" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
+<junction x="190.5" y="109.22"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="198.12" y1="111.76" x2="198.12" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="111.76" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
+<junction x="198.12" y="109.22"/>
+<junction x="205.74" y="109.22"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="139.7" x2="177.8" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="137.16" x2="185.42" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="137.16" x2="193.04" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="137.16" x2="200.66" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="137.16" x2="208.28" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="137.16" x2="215.9" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="137.16" x2="226.06" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="137.16" x2="226.06" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="137.16" x2="193.04" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="139.7" x2="185.42" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<junction x="185.42" y="137.16"/>
+<junction x="193.04" y="137.16"/>
+<pinref part="C7" gate="G$1" pin="-"/>
+<wire x1="177.8" y1="134.62" x2="177.8" y2="137.16" width="0.1524" layer="91"/>
+<junction x="177.8" y="137.16"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="139.7" x2="200.66" y2="137.16" width="0.1524" layer="91"/>
+<junction x="200.66" y="137.16"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="124.46" x2="200.66" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="139.7" x2="208.28" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="215.9" y1="139.7" x2="215.9" y2="137.16" width="0.1524" layer="91"/>
+<junction x="215.9" y="137.16"/>
+<junction x="208.28" y="137.16"/>
+</segment>
+<segment>
+<pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="213.36" y1="91.44" x2="215.9" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="91.44" x2="215.9" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="B" pin="FCB"/>
+<wire x1="88.9" y1="91.44" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="86.36" y1="88.9" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="106.68" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="66.04" y1="81.28" x2="66.04" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="200.66" y1="121.92" x2="200.66" y2="119.38" width="0.1524" layer="91"/>
-<junction x="200.66" y="121.92"/>
-<junction x="208.28" y="121.92"/>
+<wire x1="43.18" y1="114.3" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="22.86" y1="116.84" x2="22.86" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="25.4" y1="55.88" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="60.96" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="2"/>
+<wire x1="33.02" y1="60.96" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VFB" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="VFB"/>
-<wire x1="154.94" y1="101.6" x2="170.18" y2="101.6" width="0.1524" layer="91"/>
-<label x="167.64" y="101.6" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="142.24" y1="116.84" x2="147.32" y2="116.84" width="0.1524" layer="91"/>
+<label x="147.32" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="190.5" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
+<label x="182.88" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VOUT" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="VOUT"/>
-<label x="167.64" y="106.68" size="1.778" layer="95" align="bottom-right"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="104.14" x2="190.5" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="106.68" x2="198.12" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="106.68" x2="205.74" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="106.68" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="106.68" x2="198.12" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="106.68" x2="154.94" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="106.68" x2="213.36" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="106.68" x2="226.06" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="106.68" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="PAD1" gate="1" pin="P"/>
-<wire x1="226.06" y1="106.68" x2="236.22" y2="106.68" width="0.1524" layer="91"/>
+<label x="154.94" y="121.92" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="121.92" x2="175.26" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="121.92" x2="175.26" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="104.14" x2="213.36" y2="106.68" width="0.1524" layer="91"/>
-<junction x="190.5" y="106.68"/>
-<junction x="198.12" y="106.68"/>
-<junction x="205.74" y="106.68"/>
-<junction x="213.36" y="106.68"/>
-<junction x="226.06" y="106.68"/>
+<wire x1="167.64" y1="121.92" x2="167.64" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="121.92" x2="142.24" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="121.92" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="121.92" x2="190.5" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="121.92" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="121.92" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="121.92" x2="215.9" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="121.92" x2="215.9" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="PAD3" gate="1" pin="P"/>
+<wire x1="215.9" y1="121.92" x2="226.06" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="121.92" x2="233.68" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="121.92" x2="238.76" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="119.38" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
+<junction x="167.64" y="121.92"/>
+<junction x="175.26" y="121.92"/>
+<junction x="182.88" y="121.92"/>
+<junction x="215.9" y="121.92"/>
+<pinref part="C14" gate="G$1" pin="+"/>
+<pinref part="C15" gate="G$1" pin="+"/>
+<wire x1="226.06" y1="119.38" x2="226.06" y2="121.92" width="0.1524" layer="91"/>
+<junction x="226.06" y="121.92"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="119.38" x2="190.5" y2="121.92" width="0.1524" layer="91"/>
+<junction x="190.5" y="121.92"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="119.38" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="119.38" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
+<junction x="205.74" y="121.92"/>
+<junction x="198.12" y="121.92"/>
+<pinref part="PAD4" gate="1" pin="P"/>
+<wire x1="238.76" y1="114.3" x2="233.68" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="114.3" x2="233.68" y2="121.92" width="0.1524" layer="91"/>
+<junction x="233.68" y="121.92"/>
 </segment>
 </net>
 <net name="VIN" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="VIN"/>
-<wire x1="154.94" y1="121.92" x2="180.34" y2="121.92" width="0.1524" layer="91"/>
-<label x="167.64" y="121.92" size="1.778" layer="95" align="bottom-right"/>
-<wire x1="180.34" y1="121.92" x2="180.34" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="PAD3" gate="1" pin="P"/>
-<wire x1="180.34" y1="134.62" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="134.62" x2="200.66" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="134.62" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="134.62" x2="215.9" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="134.62" x2="231.14" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="132.08" x2="215.9" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="208.28" y1="134.62" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="137.16" x2="167.64" y2="137.16" width="0.1524" layer="91"/>
+<label x="154.94" y="137.16" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="167.64" y1="137.16" x2="167.64" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="PAD1" gate="1" pin="P"/>
+<wire x1="167.64" y1="149.86" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="149.86" x2="185.42" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="149.86" x2="193.04" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="149.86" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="149.86" x2="208.28" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="149.86" x2="215.9" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="149.86" x2="226.06" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="149.86" x2="233.68" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="147.32" x2="226.06" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="149.86" x2="193.04" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="149.86" x2="185.42" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="149.86" x2="177.8" y2="147.32" width="0.1524" layer="91"/>
+<junction x="177.8" y="149.86"/>
+<junction x="185.42" y="149.86"/>
+<junction x="193.04" y="149.86"/>
+<junction x="226.06" y="149.86"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="144.78" x2="43.18" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="149.86" x2="167.64" y2="149.86" width="0.1524" layer="91"/>
+<junction x="167.64" y="149.86"/>
+<pinref part="C7" gate="G$1" pin="+"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="147.32" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
+<junction x="200.66" y="149.86"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="134.62" x2="200.66" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="134.62" x2="193.04" y2="132.08" width="0.1524" layer="91"/>
-<junction x="193.04" y="134.62"/>
-<junction x="200.66" y="134.62"/>
-<junction x="208.28" y="134.62"/>
-<junction x="215.9" y="134.62"/>
+<wire x1="208.28" y1="147.32" x2="208.28" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="147.32" x2="215.9" y2="149.86" width="0.1524" layer="91"/>
+<junction x="208.28" y="149.86"/>
+<junction x="215.9" y="149.86"/>
+<pinref part="PAD2" gate="1" pin="P"/>
+<wire x1="238.76" y1="142.24" x2="233.68" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="142.24" x2="233.68" y2="149.86" width="0.1524" layer="91"/>
+<junction x="233.68" y="149.86"/>
 </segment>
 </net>
 <net name="RSENSE" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="SENSE+"/>
-<wire x1="154.94" y1="91.44" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="106.68" x2="147.32" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="U1" gate="B" pin="RSENSE"/>
-<wire x1="170.18" y1="91.44" x2="172.72" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="96.52" x2="170.18" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="91.44" x2="170.18" y2="96.52" width="0.1524" layer="91"/>
-<junction x="170.18" y="91.44"/>
+<wire x1="147.32" y1="106.68" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="111.76" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="106.68" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
+<junction x="147.32" y="106.68"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="127" x2="22.86" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="43.18" y1="134.62" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="43.18" y1="132.08" x2="43.18" y2="127" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="127" x2="35.56" y2="127" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="132.08" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
+<junction x="43.18" y="132.08"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="91.44" x2="203.2" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -11048,6 +9067,10 @@ Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WCAP-ASLI"&gt;http:/
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
