@@ -42,3 +42,10 @@ eagle.epf
 # file locks introduced since 7.x
 *.lck
 
+# design block files
+*.dbl
+
+# LTSpice simulation output files
+*.log
+*.raw
+*.net
