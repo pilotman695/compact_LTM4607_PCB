@@ -8592,7 +8592,7 @@ than calculation to make
 LTSpice simulation.</text>
 <text x="38.1" y="139.7" size="1.778" layer="97" rot="R180">Short JP1 to
 turn on converter.</text>
-<text x="58.42" y="88.9" size="1.778" layer="97" rot="R180">R5-R9 divider sets switching
+<text x="58.42" y="88.9" size="1.778" layer="97" rot="R180">R6-R9 divider sets switching
 frequency to 400kHz.</text>
 <text x="43.18" y="48.26" size="1.778" layer="97">PGOOD is an open drain pin that
 is pulled to ground when output
