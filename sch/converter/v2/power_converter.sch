@@ -9733,8 +9733,8 @@ Optocouplers recommeded for interfacing with micro-controllers</text>
 <text x="147.32" y="142.24" size="1.778" layer="97">Inductor:
 74439370047</text>
 <text x="217.17" y="20.828" size="2.1844" layer="94">Rev: 2.0</text>
-<wire x1="76.2" y1="38.1" x2="76.2" y2="40.64" width="0.1524" layer="94"/>
-<wire x1="76.2" y1="40.64" x2="85.344" y2="40.64" width="0.1524" layer="94"/>
+<wire x1="60.96" y1="38.1" x2="60.96" y2="40.64" width="0.1524" layer="94"/>
+<wire x1="60.96" y1="40.64" x2="85.344" y2="40.64" width="0.1524" layer="94"/>
 <wire x1="85.344" y1="40.64" x2="93.98" y2="40.64" width="0.1524" layer="94"/>
 <wire x1="93.98" y1="40.64" x2="93.98" y2="38.1" width="0.1524" layer="94"/>
 <wire x1="106.68" y1="38.1" x2="106.68" y2="40.64" width="0.1524" layer="94"/>
@@ -9807,22 +9807,6 @@ Optocouplers recommeded for interfacing with micro-controllers</text>
 <wire x1="88.9" y1="137.16" x2="73.66" y2="137.16" width="0.1524" layer="91"/>
 <label x="76.2" y="137.16" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="P$30"/>
-<wire x1="30.48" y1="33.02" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="35.56" x2="33.02" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$27"/>
-<wire x1="33.02" y1="35.56" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="35.56" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$28"/>
-<wire x1="38.1" y1="33.02" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$29"/>
-<wire x1="33.02" y1="30.48" x2="33.02" y2="35.56" width="0.1524" layer="91"/>
-<junction x="33.02" y="35.56"/>
-<junction x="38.1" y="35.56"/>
-<label x="30.734" y="36.322" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="INTVCC" class="0">
 <segment>
@@ -9835,22 +9819,6 @@ Optocouplers recommeded for interfacing with micro-controllers</text>
 <wire x1="53.34" y1="96.52" x2="43.18" y2="96.52" width="0.1524" layer="91"/>
 <label x="40.64" y="96.52" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="P$26"/>
-<wire x1="45.72" y1="33.02" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$23"/>
-<wire x1="48.26" y1="35.56" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="35.56" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="35.56" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$24"/>
-<wire x1="53.34" y1="33.02" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$25"/>
-<wire x1="48.26" y1="30.48" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
-<junction x="48.26" y="35.56"/>
-<junction x="53.34" y="35.56"/>
-<label x="45.72" y="36.322" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="PGOOD" class="0">
 <segment>
@@ -9859,12 +9827,12 @@ Optocouplers recommeded for interfacing with micro-controllers</text>
 <label x="76.2" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="P$22"/>
-<wire x1="60.96" y1="33.02" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="35.56" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$21"/>
-<wire x1="63.5" y1="35.56" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
-<label x="60.452" y="33.02" size="1.778" layer="95" rot="R90"/>
+<pinref part="U$1" gate="G$1" pin="P$26"/>
+<wire x1="45.72" y1="33.02" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$25"/>
+<wire x1="48.26" y1="30.48" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
+<label x="45.212" y="33.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="RUN" class="0">
@@ -9884,14 +9852,6 @@ Optocouplers recommeded for interfacing with micro-controllers</text>
 <wire x1="68.58" y1="116.84" x2="88.9" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="P$20"/>
-<wire x1="68.58" y1="33.02" x2="68.58" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="35.56" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$19"/>
-<wire x1="71.12" y1="35.56" x2="71.12" y2="30.48" width="0.1524" layer="91"/>
-<label x="68.072" y="33.02" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <wire x1="43.18" y1="129.54" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="129.54" x2="43.18" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -9899,6 +9859,14 @@ Optocouplers recommeded for interfacing with micro-controllers</text>
 <junction x="43.18" y="129.54"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="129.54" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$23"/>
+<wire x1="53.34" y1="35.56" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="35.56" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$24"/>
+<wire x1="53.34" y1="33.02" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
+<label x="52.832" y="33.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="COMP" class="0">
@@ -10164,6 +10132,26 @@ Optocouplers recommeded for interfacing with micro-controllers</text>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
 <wire x1="149.86" y1="33.02" x2="149.86" y2="27.94" width="0.1524" layer="91"/>
 <label x="142.24" y="33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$30"/>
+<wire x1="30.48" y1="33.02" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="35.56" x2="33.02" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$29"/>
+<wire x1="33.02" y1="30.48" x2="33.02" y2="35.56" width="0.1524" layer="91"/>
+<label x="30.226" y="35.814" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$27"/>
+<wire x1="38.1" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="35.56" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$28"/>
+<wire x1="38.1" y1="33.02" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
+<label x="37.846" y="35.814" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
