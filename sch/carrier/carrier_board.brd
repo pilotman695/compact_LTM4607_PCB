@@ -192,6 +192,8 @@ CARRIER BOARD</text>
 <text x="58.42" y="115.57" size="1.778" layer="21" rot="R90" align="top-center">GND</text>
 <text x="58.42" y="93.98" size="1.778" layer="21" rot="R90" align="top-center">GND</text>
 <text x="58.42" y="72.39" size="1.778" layer="21" rot="R90" align="top-center">GND</text>
+<text x="147.32" y="88.9" size="1.778" layer="21" rot="R90">INPUT: 12.5-36V</text>
+<text x="147.32" y="64.77" size="1.778" layer="21" rot="R90">OUTPUT: 3.3-24V</text>
 </plain>
 <libraries>
 <library name="LTM4607">
