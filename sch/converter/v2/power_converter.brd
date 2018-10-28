@@ -2251,7 +2251,21 @@ design rules under a new name.</description>
 <signal name="INTVCC">
 <contactref element="U1" pad="F5"/>
 <contactref element="R6" pad="2"/>
-<wire x1="23.495" y1="27.2025" x2="20.955" y2="32.8295" width="0" layer="19" extent="1-16"/>
+<wire x1="20.955" y1="32.8295" x2="20.4696" y2="32.3441" width="0.1524" layer="1"/>
+<via x="20.4696" y="32.3441" extent="1-16" drill="0.35"/>
+<wire x1="20.4696" y1="32.3441" x2="20.4696" y2="31.5186" width="0.1524" layer="15"/>
+<wire x1="17.896" y1="25.7467875" x2="17.896" y2="25.3072125" width="0.1524" layer="15"/>
+<wire x1="18.7325" y1="26.5832875" x2="17.896" y2="25.7467875" width="0.1524" layer="15"/>
+<wire x1="17.896" y1="25.3072125" x2="18.2477125" y2="24.9555" width="0.1524" layer="15"/>
+<wire x1="18.7325" y1="29.7815" x2="18.7325" y2="26.5832875" width="0.1524" layer="15"/>
+<via x="24.90506875" y="25.66706875" extent="1-16" drill="0.35"/>
+<wire x1="24.3547125" y1="25.4226" x2="24.6606" y2="25.4226" width="0.1524" layer="15"/>
+<wire x1="24.6606" y1="25.4226" x2="24.90506875" y2="25.66706875" width="0.1524" layer="15"/>
+<wire x1="23.8876125" y1="24.9555" x2="24.3547125" y2="25.4226" width="0.1524" layer="15"/>
+<wire x1="18.2477125" y1="24.9555" x2="23.8876125" y2="24.9555" width="0.1524" layer="15"/>
+<wire x1="24.90506875" y1="25.66706875" x2="23.495" y2="27.0771375" width="0.1524" layer="16"/>
+<wire x1="23.495" y1="27.0771375" x2="23.495" y2="27.2025" width="0.1524" layer="16"/>
+<wire x1="20.4696" y1="31.5186" x2="18.7325" y2="29.7815" width="0.1524" layer="15"/>
 </signal>
 <signal name="PGOOD">
 <contactref element="U1" pad="B5"/>
@@ -3269,6 +3283,7 @@ design rules under a new name.</description>
 </mfgpreviewcolors>
 <errors>
 <approved hash="21,19,00eb40eb42e942e9"/>
+<approved hash="23,1,d275e7c5e707d2b7"/>
 </errors>
 </board>
 </drawing>

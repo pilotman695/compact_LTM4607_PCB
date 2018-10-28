@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1046,7 +1046,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <smd name="8" x="2.795" y="1.905" dx="1.02" dy="0.61" layer="1"/>
 <smd name="9" x="0.69" y="0" dx="3.81" dy="3.91" layer="1"/>
 </package>
-<package name="QFN20" urn="urn:adsk.eagle:footprint:3428/1">
+<package name="QFN20" urn="urn:adsk.eagle:footprint:3428/1" locally_modified="yes">
 <description>&lt;b&gt;ES Package, 20-Contact QFN with Exposed Thermal Pad&lt;/b&gt;&lt;p&gt;
 &lt;a href="http://www.allegromicro.com/en/Products/Part_Numbers/3906/3906.pdf"&gt; Data sheet &lt;/a&gt;</description>
 <wire x1="-1.8984" y1="-1.8984" x2="1.8984" y2="-1.8984" width="0.2032" layer="51"/>
@@ -1066,7 +1066,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <smd name="3" x="-2.05" y="0" dx="0.95" dy="0.3" layer="1" stop="no" cream="no"/>
 <smd name="4" x="-2.05" y="-0.5" dx="0.95" dy="0.3" layer="1" stop="no" cream="no"/>
 <smd name="5" x="-2.05" y="-1" dx="0.95" dy="0.3" layer="1" stop="no" cream="no"/>
-<smd name="EXP" x="0" y="0" dx="2.45" dy="2.45" layer="1" stop="no" cream="no"/>
+<smd name="EXP" x="0" y="0" dx="2.45" dy="2.45" layer="1"/>
 <smd name="6" x="-1" y="-2.05" dx="0.95" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
 <smd name="7" x="-0.5" y="-2.05" dx="0.95" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
 <smd name="8" x="0" y="-2.05" dx="0.95" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
@@ -1124,20 +1124,6 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <rectangle x1="-0.95" y1="1.925" x2="-0.05" y2="2.175" layer="31" rot="R270"/>
 <rectangle x1="-1.525" y1="1.875" x2="-0.475" y2="2.225" layer="29" rot="R270"/>
 <rectangle x1="-1.45" y1="1.925" x2="-0.55" y2="2.175" layer="31" rot="R270"/>
-<polygon width="0.15" layer="29">
-<vertex x="-1.2" y="0.95" curve="87.140274"/>
-<vertex x="-0.95" y="1.2"/>
-<vertex x="1.2" y="1.2"/>
-<vertex x="1.2" y="-1.2"/>
-<vertex x="-1.2" y="-1.2"/>
-</polygon>
-<polygon width="0.15" layer="31">
-<vertex x="-1.075" y="0.875" curve="56.144974"/>
-<vertex x="-0.875" y="1.075"/>
-<vertex x="1.075" y="1.075"/>
-<vertex x="1.075" y="-1.075"/>
-<vertex x="-1.075" y="-1.075"/>
-</polygon>
 </package>
 <package name="MKDSD_1730502">
 <pad name="P$1" x="-2.54" y="-3.81" drill="1.4"/>
@@ -1262,6 +1248,18 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="-5.842" y1="5.588" x2="5.842" y2="5.588" width="0.2032" layer="21"/>
 <wire x1="5.842" y1="5.588" x2="5.842" y2="-2.032" width="0.2032" layer="21"/>
 <text x="-5.08" y="-2.54" size="1.778" layer="21" ratio="10" align="top-left">&gt;NAME</text>
+</package>
+<package name="POWERPAK_SO8L_SINGLE">
+<smd name="P$1" x="-1.905" y="0" dx="1.27" dy="0.61" layer="1" rot="R90"/>
+<smd name="P$2" x="-0.635" y="0" dx="1.27" dy="0.61" layer="1" rot="R90"/>
+<smd name="P$3" x="0.635" y="0" dx="1.27" dy="0.61" layer="1" rot="R90"/>
+<smd name="P$4" x="1.905" y="0" dx="1.27" dy="0.61" layer="1" rot="R90"/>
+<smd name="P$5" x="0" y="3.527" dx="4.061" dy="3.63" layer="1"/>
+<smd name="P$6" x="-2.328" y="2.715" dx="0.595" dy="0.61" layer="1"/>
+<smd name="P$7" x="2.328" y="2.715" dx="0.595" dy="0.61" layer="1"/>
+<smd name="P$8" x="0" y="5.596" dx="5" dy="0.51" layer="1"/>
+<text x="-3.81" y="-1.27" size="1.778" layer="21" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-1.27" size="1.778" layer="21" rot="R90" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
@@ -1966,6 +1964,7 @@ P3S12, 1926155-2</text>
 <pin name="GND" x="0" y="-2.54" visible="pin" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <pin name="VOUT" x="12.7" y="7.62" visible="pin" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="VIN" x="-12.7" y="7.62" visible="pin" length="short" direction="pas" swaplevel="1"/>
+<text x="-10.16" y="15.24" size="1.778" layer="94" align="top-left">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2483,6 +2482,16 @@ P3S12, 1926155-2</text>
 <connect gate="G$1" pin="D" pad="5 6 7 8 9"/>
 <connect gate="G$1" pin="G" pad="4"/>
 <connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="POWERPAK_SO8L" package="POWERPAK_SO8L_SINGLE">
+<connects>
+<connect gate="G$1" pin="D" pad="P$5 P$6 P$7 P$8"/>
+<connect gate="G$1" pin="G" pad="P$4"/>
+<connect gate="G$1" pin="S" pad="P$1 P$2 P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
