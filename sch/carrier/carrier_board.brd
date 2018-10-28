@@ -2570,12 +2570,12 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="121.285" y="119.38" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="100k" x="84.455" y="137.16" smashed="yes" rot="MR270">
-<attribute name="NAME" x="83.82" y="137.795" size="1.27" layer="26" rot="MR270"/>
+<attribute name="NAME" x="83.82" y="135.255" size="1.27" layer="26" rot="MR270"/>
 <attribute name="SPICEPREFIX" value="R" x="84.455" y="137.16" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="86.36" y="137.795" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="100k" x="85.725" y="137.16" smashed="yes" rot="MR270">
-<attribute name="NAME" x="85.09" y="137.795" size="1.27" layer="26" rot="MR270"/>
+<attribute name="NAME" x="86.36" y="135.255" size="1.27" layer="26" rot="MR270"/>
 <attribute name="SPICEPREFIX" value="R" x="85.725" y="137.16" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="87.63" y="137.795" size="1.27" layer="28" rot="MR270"/>
 </element>
