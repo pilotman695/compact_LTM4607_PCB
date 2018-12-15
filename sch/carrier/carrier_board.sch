@@ -507,6 +507,30 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <rectangle x1="2.5" y1="-0.7" x2="2.75" y2="0.65" layer="51"/>
 <rectangle x1="-1.4" y1="-1.05" x2="-1.1" y2="1.05" layer="21"/>
 </package>
+<package name="CHIPLED_0603">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
+<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="51"/>
+<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-0.635" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="1.905" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="51"/>
+<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="51"/>
+<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="51"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
+<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
+<rectangle x1="-0.125" y1="0" x2="0.125" y2="0.25" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1926155-2_CARD">
@@ -838,6 +862,21 @@ P3S12, 1926155-2</text>
 <pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
 <pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="SCHOTTKY">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="1926155-2_SOCK" prefix="X" uservalue="yes">
@@ -1092,6 +1131,22 @@ P3S12, 1926155-2</text>
 <connects>
 <connect gate="G$1" pin="1" pad="C"/>
 <connect gate="G$1" pin="2" pad="A"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SD0603S040S0R2" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CHIPLED_0603">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -20473,8 +20528,11 @@ www.irf.com&lt;p&gt;
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
-<part name="R35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1k"/>
-<part name="R36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1k"/>
+<part name="R35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="2k"/>
+<part name="R36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="2k"/>
+<part name="D6" library="LTM4607" deviceset="SD0603S040S0R2" device=""/>
+<part name="D7" library="LTM4607" deviceset="SD0603S040S0R2" device=""/>
+<part name="R37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -21772,7 +21830,9 @@ www.irf.com&lt;p&gt;
 <description>Hotswap System</description>
 <plain>
 <text x="12.7" y="10.16" size="1.778" layer="94">NOTES:
-1. OV/UV resistors selected for UVLO of 12.5V and OVLO of 30V with 1V hysterisis</text>
+1. OV/UV resistors selected for UVLO of 12.5V and OVLO of 30V with 1V hysterisis
+2. Populate R37 to enable shortest voltage source validation time
+3. Low impedance input source recommended to prevent motor-boating effect</text>
 </plain>
 <instances>
 <instance part="R19" gate="G$1" x="20.32" y="139.7" smashed="yes" rot="R90">
@@ -21927,6 +21987,18 @@ www.irf.com&lt;p&gt;
 <instance part="R36" gate="G$1" x="215.9" y="114.3" smashed="yes">
 <attribute name="NAME" x="212.09" y="115.7986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="212.09" y="110.998" size="1.778" layer="96"/>
+</instance>
+<instance part="D6" gate="G$1" x="165.1" y="121.92" smashed="yes">
+<attribute name="NAME" x="162.814" y="123.825" size="1.778" layer="95"/>
+<attribute name="VALUE" x="162.814" y="118.491" size="1.778" layer="96"/>
+</instance>
+<instance part="D7" gate="G$1" x="215.9" y="121.92" smashed="yes">
+<attribute name="NAME" x="213.614" y="123.825" size="1.778" layer="95"/>
+<attribute name="VALUE" x="213.614" y="118.491" size="1.778" layer="96"/>
+</instance>
+<instance part="R37" gate="G$1" x="71.12" y="134.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="72.6186" y="138.43" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="67.818" y="138.43" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -22137,6 +22209,10 @@ www.irf.com&lt;p&gt;
 <pinref part="R35" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="114.3" x2="172.72" y2="114.3" width="0.1524" layer="91"/>
 <junction x="172.72" y="114.3"/>
+<pinref part="D6" gate="G$1" pin="C"/>
+<wire x1="167.64" y1="121.92" x2="170.18" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="121.92" x2="170.18" y2="114.3" width="0.1524" layer="91"/>
+<junction x="170.18" y="114.3"/>
 </segment>
 </net>
 <net name="G1" class="0">
@@ -22153,6 +22229,10 @@ www.irf.com&lt;p&gt;
 <pinref part="R36" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="114.3" x2="223.52" y2="114.3" width="0.1524" layer="91"/>
 <junction x="223.52" y="114.3"/>
+<pinref part="D7" gate="G$1" pin="C"/>
+<wire x1="218.44" y1="121.92" x2="220.98" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="121.92" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
+<junction x="220.98" y="114.3"/>
 </segment>
 </net>
 <net name="TMR" class="0">
@@ -22161,6 +22241,10 @@ www.irf.com&lt;p&gt;
 <wire x1="83.82" y1="127" x2="78.74" y2="127" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="129.54" x2="78.74" y2="127" width="0.1524" layer="91"/>
+<pinref part="R37" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="129.54" x2="71.12" y2="127" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="127" x2="78.74" y2="127" width="0.1524" layer="91"/>
+<junction x="78.74" y="127"/>
 </segment>
 </net>
 <net name="/VALID1" class="0">
@@ -22201,6 +22285,11 @@ www.irf.com&lt;p&gt;
 <pinref part="U10" gate="G$1" pin="EN"/>
 <wire x1="101.6" y1="139.7" x2="101.6" y2="152.4" width="0.1524" layer="91"/>
 <label x="101.6" y="152.4" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+</segment>
+<segment>
+<pinref part="R37" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="139.7" x2="71.12" y2="152.4" width="0.1524" layer="91"/>
+<label x="71.12" y="152.4" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="HYS" class="0">
@@ -22279,6 +22368,10 @@ www.irf.com&lt;p&gt;
 <pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="160.02" y1="114.3" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
 <label x="144.78" y="114.3" size="1.778" layer="95"/>
+<pinref part="D6" gate="G$1" pin="A"/>
+<wire x1="162.56" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="121.92" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
+<junction x="160.02" y="114.3"/>
 </segment>
 </net>
 <net name="G1_DRIVER" class="0">
@@ -22291,6 +22384,10 @@ www.irf.com&lt;p&gt;
 <pinref part="R36" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="114.3" x2="195.58" y2="114.3" width="0.1524" layer="91"/>
 <label x="195.58" y="114.3" size="1.778" layer="95"/>
+<pinref part="D7" gate="G$1" pin="A"/>
+<wire x1="213.36" y1="121.92" x2="210.82" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="121.92" x2="210.82" y2="114.3" width="0.1524" layer="91"/>
+<junction x="210.82" y="114.3"/>
 </segment>
 </net>
 </nets>
