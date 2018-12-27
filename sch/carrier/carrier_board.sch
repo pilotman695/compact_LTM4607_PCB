@@ -20539,7 +20539,7 @@ www.irf.com&lt;p&gt;
 <description>Slot 1</description>
 <plain>
 <text x="162.56" y="27.94" size="1.778" layer="94">NOTES:
-1. INA226 address: 0x1000000</text>
+1. INA226 address: 0b1000000</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -20990,7 +20990,7 @@ www.irf.com&lt;p&gt;
 <description>Slot 2</description>
 <plain>
 <text x="162.56" y="27.94" size="1.778" layer="94">NOTES:
-1. INA226 address: 0x1000001</text>
+1. INA226 address: 0b1000001</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -21418,7 +21418,7 @@ www.irf.com&lt;p&gt;
 <description>Slot 3</description>
 <plain>
 <text x="162.56" y="27.94" size="1.778" layer="94">NOTES:
-1. INA226 address: 0x1000010</text>
+1. INA226 address: 0b1000010</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes">
