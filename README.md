@@ -11,6 +11,8 @@ Stand-off mounting, solderable wire connections
 ## Version 2
 Card-edge style, compacted
 
+Assembly tutorial: [https://www.youtube.com/watch?v=_QmpLCoHiIg](https://www.youtube.com/watch?v=_QmpLCoHiIg)
+
 ## Carrier Board
 3 card-edge connectors, hotswapping, reverse polarity protection, switchable output nodes, undervoltage/overvoltage lockout
 
